@@ -11,7 +11,58 @@
   <link rel="stylesheet" href="assets/game.css">
 </head>
 
-<body style="bg-dark">
+<body style="bg-">
+
+  <header>
+
+  </header>
+  <main class="container-fluid">
+    <div class="row">
+
+      <div class="col-6">
+        <div class="row">
+          <div class="col">
+            <h1 class="span">Health:<span id="enemyHealth">100</span></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"><img src="assets/Fighter1.png" width="400px" alt="" onclick="changeHero()"></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h1 id="enemyName">Ninja</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="row">
+          <div class="col">
+            <h1 class="span">Health:<span id="heroHealth">100</span></h1>
+          </div>
+        </div>
+        <div class="row">
+          <span id="lose">
+            <div class="col"><img src="assets/slash.png" width="100px" alt="" onclick="slash()">
+              <img src="assets/blast.jpg" width="100px" alt="" onclick="blast()">
+              <img src="assets/manaStorm.png" width="100px" alt="" onclick="manaStorm()">
+              <img src="assets/Heal.jpg" width="100px" alt="" onclick="heal()"></div>
+          </span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h1>Round: <span id="rounds">00</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
 
   <script src="game.js"></script>
 </body>
