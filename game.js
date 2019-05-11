@@ -33,8 +33,8 @@ function blast() {
 }
 
 function manaStorm() {
-  currentEnemyX.Health -= 10
-  heroHealth -= 10
+  currentEnemyX.Health -= Math.floor((Math.random() * 15) + 1)
+  heroHealth -= Math.floor((Math.random() * 5) + 1)
   update()
 }
 
