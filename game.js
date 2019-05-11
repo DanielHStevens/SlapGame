@@ -16,13 +16,11 @@ let enemy = [{
   name: "Dragon",
   damage: 4,
   Health: 200,
-  image: './assets/Dragon.jpg',
+  image: './assets/Dragon.png',
 }]
 
 let currentEnemyX = enemy[currentEnemy]
 
-function changeHero() {
-}
 
 function slash() {
   currentEnemyX.Health--
@@ -70,6 +68,11 @@ function newEnemy() {
   }
   else { document.getElementById("lose").innerHTML = `<h1>You Win!</h1>` }
   document.getElementById("enemyName").innerText = currentEnemyX.name
+
+  document.getElementById("EnemyPic").innerHTML = `
+  <img src="${enemy[currentEnemy].image}" class="enemyPic" alt=""></img>`
   rounds = -1
   update()
+  currentEnemyX.image
 }
+

@@ -1,0 +1,27 @@
+body {
+  background-image: url('./background.jpg');
+  color: white, #ffffff;
+   text-shadow: 1px .5px #000000b2; 
+  
+}
+
+.powers {
+ width: 40%;
+
+}
+
+h1 {
+  /** border: solid 1px white; */
+  color: #ffffff;
+}
+
+.holder {
+  height: 75vh;
+}
+
+.enemyPic {
+  
+  max-width: 70vh;
+  min-width: 60vh;
+  max-height: 70vh;
+}

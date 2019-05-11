@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/game.css">
 </head>
 
-<body style="bg-">
+<body>
 
   <header>
 
@@ -25,8 +25,10 @@
             <h1 class="span">Health:<span id="enemyHealth">100</span></h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col"><img src="assets/Fighter1.png" width="400px" alt="" onclick="changeHero()"></div>
+        <div class="row holder">
+          <div class="col"><span id="EnemyPic">
+              <img src="assets/FFighter.png" class="enemyPic" alt=""></span>
+          </div>
         </div>
         <div class="row">
           <div class="col">
@@ -41,12 +43,12 @@
             <h1 class="span">Health:<span id="heroHealth">100</span></h1>
           </div>
         </div>
-        <div class="row">
+        <div class="row holder">
           <span id="lose">
-            <div class="col"><img src="assets/slash.png" width="100px" alt="" onclick="slash()">
-              <img src="assets/blast.jpg" width="100px" alt="" onclick="blast()">
-              <img src="assets/manaStorm.png" width="100px" alt="" onclick="manaStorm()">
-              <img src="assets/Heal.jpg" width="100px" alt="" onclick="heal()"></div>
+            <div class="col"><img src="assets/slash.png" class="powers" alt="" onclick="slash()">
+              <img src="assets/blasst.png" class="powers" alt="" onclick="blast()">
+              <img src="assets/manaStorm2.png" class="powers" alt="" onclick="manaStorm()">
+              <img src="assets/heal.png" class="powers" alt="" onclick="heal()"></div>
           </span>
         </div>
         <div class="row">
