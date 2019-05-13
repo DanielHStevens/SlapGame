@@ -23,8 +23,18 @@ let currentEnemyX = enemy[currentEnemy]
 
 
 function slash() {
-  currentEnemyX.Health--
+  if (slashRandomizer() == 20) {
+    currentEnemyX.Health -= 25
+  } else {
+    currentEnemyX.Health--
+  }
+
   update()
+}
+/* var slash () = (slashRandomizer() == 20) ? currentEnemyX.Health -= 25 : currentEnemyX.Health-- */
+
+function slashRandomizer(rand) {
+  return Math.floor((Math.random() * 20) + 1)
 }
 
 function blast() {
