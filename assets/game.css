@@ -10,6 +10,9 @@ body {
  width: 40%;
 
 }
+.items {
+ width: 90%;
+}
 
 h1 {
   /** border: solid 1px white; */
